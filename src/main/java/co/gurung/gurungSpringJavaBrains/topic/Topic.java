@@ -1,21 +1,22 @@
-package co.gurung.gurungSpringJavaBrains.models;
+package co.gurung.gurungSpringJavaBrains.topic;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+
 @Entity
-public class Course {
+public class Topic {
     @Id
     private String id;
     private String name;
     private String description;
 
-    public Course() {
-    }
-
-    public Course(String id, String name, String description) {
+    public Topic(String id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
+    }
+
+    public Topic() {
     }
 
     public String getId() {
@@ -44,7 +45,7 @@ public class Course {
 
     @Override
     public String toString() {
-        return "Course{" +
+        return "topic{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
@@ -56,11 +57,11 @@ public class Course {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Course course = (Course) o;
+        Topic topic = (Topic) o;
 
-        if (id != null ? !id.equals(course.id) : course.id != null) return false;
-        if (name != null ? !name.equals(course.name) : course.name != null) return false;
-        return description != null ? description.equals(course.description) : course.description == null;
+        if (id != null ? !id.equals(topic.id) : topic.id != null) return false;
+        if (name != null ? !name.equals(topic.name) : topic.name != null) return false;
+        return description != null ? description.equals(topic.description) : topic.description == null;
     }
 
     @Override

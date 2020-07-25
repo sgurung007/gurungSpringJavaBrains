@@ -1,7 +1,7 @@
-package co.gurung.gurungSpringJavaBrains.controllers.topicController;
+package co.gurung.gurungSpringJavaBrains.topic;
 
-import co.gurung.gurungSpringJavaBrains.models.Topic;
-import co.gurung.gurungSpringJavaBrains.services.TopicService;
+import co.gurung.gurungSpringJavaBrains.topic.Topic;
+import co.gurung.gurungSpringJavaBrains.topic.TopicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,8 +1,7 @@
-package co.gurung.gurungSpringJavaBrains.services;
+package co.gurung.gurungSpringJavaBrains.course;
 
-import co.gurung.gurungSpringJavaBrains.models.Course;
-import co.gurung.gurungSpringJavaBrains.models.Course;
-import co.gurung.gurungSpringJavaBrains.repositories.topicRepository.CourseRepository;
+import co.gurung.gurungSpringJavaBrains.course.Course;
+import co.gurung.gurungSpringJavaBrains.course.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
